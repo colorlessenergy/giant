@@ -1,0 +1,2 @@
+baseurl: /giant
+exclude: ["README.md"]
