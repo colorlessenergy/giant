@@ -13,3 +13,95 @@ layout: default
   </div>
   <p><a href="http://clashofclans.wikia.com/wiki/Giant">About the Giant</a></p>
 </section>
+<section>
+  <div>
+    {% for big in site.data.big-pic %}
+    <div style="background-image: url({{big.img}})">
+      <h2>{{big.title}}</h2>
+      <img src="{{big.img-desc}}" alt="{{big.title}}">
+    </div>
+    {% endfor %}
+  </div>
+  <div>
+    {% for small in site.data.small-pic %}
+    <div style="background-image: url({{small.img}})">
+      <h2>{{small.title}}</h2>
+      <img src="{{small.img-desc}}" alt="{{small.title}}">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <p>Who is the Giant</p>
+  <div>
+    <h2>Most efficient Tank in Clash Royale and Clash of Clans</h2>
+    <p>
+      Giants prioritize defensive structures above all other targets, and will bypass all other types of enemy buildings and troops while any defenses remain on the battlefield.
+    </p>
+    <p>
+      The Giant is unlocked in the beginning in the training camp.
+      He is a building-targeting, the giant is a melee troop with high hitpoints and decent damage.
+      He wears a large, brown, coat and has ginger sideburns and blue eyes.
+    </p>
+    <div>
+      <p><a href="http://clashroyale.wikia.com/wiki/Giant">More Info</a></p>
+    </div>
+  </div>
+</section>
+<section>
+  <img src="images/cc.jpg" alt="clash of clans">
+  <img src="images/cr.jpg" alt="clash royale">
+</section>
+<section>
+  <div>
+    <h2>what the giant does</h2>
+    <p>The giant soaks damage and gives a frontline for smaller troops</p>
+  </div>
+  <div>
+    <div>
+      <div>
+        <h2>Troops work will with Giant</h2>
+        <p>Archers</p>
+        <p>musketeer</p>
+        <p>Baby Dragon</p>
+      </div>
+      <div>
+        <h2>Building/Troops that destroy the Giant</h2>
+        <p>Inferno Tower</p>
+        <p>Inferno Dragon</p>
+        <p>Skeleton Army</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h2>Giant Pros</h2>
+        <p>- can stack a push</p>
+        <p>- can tank alot of damage</p>
+        <p>- does alot of damage</p>
+      </div>
+      <div>
+        <h2>Giant Cons</h2>
+        <p>- Easily countered</p>
+        <p>- Requires a backline</p>
+        <p>- Super Slow</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  {% for tank in site.data.tanks %}
+    <div>
+      <img src="{{tank.image}}" alt="{{tank.title}}">
+      <p>{{tank.tag}}</p>
+      <h2>{{tank.title}}</h2>
+    </div>
+  {% endfor %}
+  <p><a href="https://clashofclans.com/clash-basics/troops">View all Troops</a></p>
+</section>
+<section>
+  <h2>Newsletter</h2>
+  <div>
+    <p>join our Newsletter</p>
+    <input type="text" placeholder="Enter Email">
+  </div>
+</section>
