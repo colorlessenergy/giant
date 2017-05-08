@@ -6,6 +6,27 @@ html, body {
   padding: 0;
 }
 
+footer .contact {
+  align-items: center;
+  background-color: #252424;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+
+footer .contact .contact-desc {
+  color: #fff;
+  font-size: 30px;
+}
+
+footer .contact p a {
+  background-color: #a08965;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
 /* responsive nav */
 
 header {
@@ -13,16 +34,122 @@ header {
   margin: 0 5%;
 }
 
-header div {
+header .normal-nav {
   align-items: center;
   display: none;
   justify-content: space-between;
   height: 100%;
 }
 
-header div p {
+header .normal-nav p {
   font-size: 30px;
   margin: 0;
+}
+
+header .nav {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+}
+
+header .nav div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+header .nav p {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 5%;
+}
+
+header .nav ul {
+  align-self: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav img {
+  margin-right: 5%;
+}
+
+header .nav.toggle-nav {
+  transform: translateX(0);
+}
+
+section .big-pics {
+  display: flex;
+}
+
+section .big-pics div h2 a, section .small-pics div h2 a  {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+section .small-pics div h2 a {
+  color: #000;
+}
+
+section .big-pics div:hover > h2 a {
+  border-bottom: 2px solid #fff;
+}
+
+section .small-pics div:hover > h2 a {
+  border-bottom: 2px solid #000;
+}
+
+section .big-pics div img {
+  margin: 10px;
+  width: 30%;
+}
+
+section .small-pics {
+  display: flex;
+}
+
+section .small-pics div {
+  height: 400px;
+}
+
+section .small-pics div img {
+  margin: 10px;
+  width: 60%;
+}
+
+.parent {
+  display: flex;
+  overflow: hidden;
+  height: 600px;
+  width: 50%;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+    transform: scale(1.02);
+}
+
+.child {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  transition: all .5s;
 }
 
 .container {
@@ -51,4 +178,189 @@ header div p {
   margin: 0;
   padding: 0;
   width: 50%
+}
+
+.copyright ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  align-items: center;
+  display: flex;
+  height: 800px;
+  justify-content: space-around;
+}
+
+.description .giant {
+  width: 30%;
+}
+
+.description .giant h2 {
+  font-size: 30px;
+}
+
+.description .giant p {
+  font-size: 20px;
+}
+
+.description .tools {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.games {
+  display: flex;
+  height: 800px;
+}
+
+.games img {
+  height: 100%;
+  width: 50%;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  height: 650px;
+}
+
+.info .context {
+  width: 40%;
+}
+
+.info .context h2 {
+  color: #a08965;
+  margin: 0;
+}
+
+.info .context p {
+  font-size: 18px;
+}
+
+.info .info-holder {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info .info-title p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.info .context .info-link {
+  border: 2px solid #a08965;
+  display: inline-block;
+  padding: 5px;
+}
+
+.info .context .info-link a {
+  color: #a08965;
+  text-decoration: none;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  height: 650px;
+  justify-content: center;
+}
+
+.main div div h2 {
+  font-size: 100px;
+  margin: 0;
+}
+
+.main div .link a {
+  color: #a08965;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main div .main-desc p {
+  color: #777;
+  font-size: 30px;
+  margin: 0;
+}
+
+.main div .main-desc {
+  margin: 20px 0;
+}
+
+.newsletter {
+  align-items: center;
+  border-top: 3px solid #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+}
+
+.newsletter h2 {
+  font-size: 50px;
+}
+
+.newsletter .type {
+  background-color: #f9f9f9;
+  padding: 0 20px;
+  width: 50%;
+  height: 135px;
+}
+
+.newsletter .type input {
+  background-color: #f9f9f9;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.tanks {
+  display: flex;
+  flex-direction: column;
+}
+
+.tanks .tank-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.tanks .tank-holder .tank-context {
+  text-align: center;
+  width: 33%;
+}
+
+.tanks .tank-holder .tank-context img {
+  height: 350px;
+  width: 100%;
+}
+
+.tanks .tank-holder .tank-context p {
+  color: #777;
+}
+
+.tanks .tank-link {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.tanks .tank-link a {
+  background-color: #a08965;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header .normal-nav {
+    display: flex;
+  }
+
+  .container nav {
+   display: none;
+ }
+
 }

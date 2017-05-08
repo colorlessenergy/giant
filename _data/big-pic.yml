@@ -1,7 +1,9 @@
 - title: Clash Royale
   img: images/cr.jpg
   img-desc: images/cr-logo.png
+  link: https://clashroyale.com/
 
 - title: Clash of Clans
   img: images/cc.jpg
   img-desc: images/cc-logo.png
+  link: http://supercell.com/en/games/clashofclans/
