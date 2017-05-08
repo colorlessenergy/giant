@@ -80,6 +80,10 @@ header .nav ul {
   padding: 0;
 }
 
+header .nav ul li {
+  font-size: 50px;
+}
+
 header .nav img {
   margin-right: 5%;
 }
@@ -150,6 +154,10 @@ section .small-pics div img {
   height: 100%;
   width: 100%;
   transition: all .5s;
+}
+
+.parent .small {
+  background-size: initial;
 }
 
 .container {
@@ -307,7 +315,7 @@ section .small-pics div img {
 .newsletter .type {
   background-color: #f9f9f9;
   padding: 0 20px;
-  width: 50%;
+  width: 60%;
   height: 135px;
 }
 
@@ -359,8 +367,99 @@ section .small-pics div img {
     display: flex;
   }
 
+  section .big-pics {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .small-pics {
+    flex-direction: column;
+  }
+
+  section .small-pics div img {
+    width: 30%;
+  }
+
+  footer .contact {
+    height: 300px;
+  }
+
   .container nav {
    display: none;
  }
 
+ .description {
+   flex-direction: column;
+   height: auto;
+ }
+
+ .description .giant {
+   width: 100%;
+ }
+
+ .description .tools {
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .games {
+   height: 400px;
+ }
+
+ .games .cr {
+   display: none;
+ }
+
+ .games img {
+   width: 100%;
+ }
+
+ .info {
+   align-items: initial;
+ }
+
+ .info .context {
+   width: 100%;
+ }
+
+ .info .info-holder {
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .info .info-title {
+   width: 100%;
+ }
+
+ .main div div h2 {
+   font-size: 70px;
+ }
+
+ .parent {
+   width: 100%;
+ }
+
+ .tanks {
+   flex-direction: column;
+ }
+
+ .tanks .tank-holder {
+   flex-direction: column;
+ }
+
+ .tanks .tank-holder .tank-context {
+   width: 100%;
+ }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .main div div h2 {
+    font-size: 50px;
+  }
+
+  .main div .main-desc p {
+    font-size: 25px;
+  }
 }

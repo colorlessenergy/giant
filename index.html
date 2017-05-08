@@ -29,7 +29,7 @@ layout: default
   <div class="small-pics">
     {% for small in site.data.small-pic %}
     <div class="parent">
-      <div class="child" style="background-image: url({{small.img}})">
+      <div class="child small" style="background-image: url({{small.img}})">
         <h2><a href="{{small.link}}">{{small.title}}</a></h2>
         <a href="{{small.link}}"><img src="{{small.img-desc}}" alt="{{small.title}}"></a>
       </div>
@@ -60,7 +60,7 @@ layout: default
 </section>
 <section class="games">
   <img src="images/cc.jpg" alt="clash of clans">
-  <img src="images/cr.jpg" alt="clash royale">
+  <img class= "cr" src="images/cr.jpg" alt="clash royale">
 </section>
 <section class="description">
   <div class="giant">
