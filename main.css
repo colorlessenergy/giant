@@ -323,6 +323,7 @@ section .small-pics div img {
   background-color: #f9f9f9;
   border: none;
   font-size: 20px;
+  outline: none;
   width: 100%;
 }
 
@@ -449,7 +450,7 @@ section .small-pics div img {
  }
 
  .tanks .tank-holder .tank-context {
-   width: 50%;
+   width: 95%;
  }
 
 }
